@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Get to know me - Ramya</title>
+        <link rel="stylesheet" href="./css/lightbox.min.css">
+        <link rel="stylesheet" href="./css/portfolio.css">
+        <style>
+        a {
+            color: white
+        }
+    </style>
+        <script src="./js/portfolio.js"></script>
+        <script src="./js/lightbox-plus-jquery.min.js"></script>
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+<hr>
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="video">
+                <source src="./video/Typing.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+            </video>
+        </div>
+    </div>
+<br>
+<br>
+        <!--Video text-->
+        <div class="video_text">
+            <h1 class="white-text">Ramya's Portfolio</h1>
+                <p class="center">
+                    <span class="highlight">
+                    <p> Interesting Fact</p>
+                    </span>
+                    <span class="highlight">
+                    <q>The world’s first computer programmer was a renowned female mathematician.</q>
+                        <br>Ada Lovelace
+                    <br>
+                    <br> Thank you for stopping by! 
+                </p>
+            </span>
+        </div>
+
+        <div class="Column_1">
+                
+            <a href="./images/Ramya.jpeg" data-lightbox="pictures"><img src="./images/Ramya_small.jpeg" class="center"></a>
+            
+    </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+          
+            <!--Right column-->
+            <div class="Column_2">
+                <h1>About</h1>
+                
+                <p>
+                    <span class="highlight">
+                    My name is Ramya Deepak. Welcome to my portfolio. Here is a little about myself and my interests.
+                    <br>
+                    <br>
+                    An inquisitive and enthusiastic upcoming Full Stack Developer who loves to code and learn! As a mother of two energetic humans, I enjoy the time with my family and some gardening. 
+                    <br>
+                    <br>I am a student of <a href="https://careers.academyoflearning.com/applynow/?mid=20918&&campaignid=11485960774&adgroupid=111013696694&adposition=&feeditemid=&targetid=kwd-851068831669&loc_interest_ms=9001388&loc_physical_ms=9001389&matchtype=...&gclid=EAIaIQobChMIwf775Mfu_AIVTQ-tBh1VmA0tEAAYASAAEgK5c_D_BwE&gclsrc=aw.ds" target="_blank">Academy of Learning</a>,  trained and  experienced in the following web and programming languages: HTML, CSS, JavaScript and also have backend knowledge SQL, C#, .Netframework.
+                    <br>
+                    <br>I am a new devloper and  would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </span>
+                </p>
+            </div>
+
+            
+        </div>
+<br>
+<br>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_3">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center">
+                        <a href="https://github.com/RDLN1687" target="_blank">Ramya's github</a>
+                    </p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_4">
+                <a href="https://github.com/RDLN1687" target="_blank"><img src="./images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        
+
+
+            <!--Contact form, right column-->
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> 
+                     <h1>Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" placeholder="Type your name here" name="name" required>
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" placeholder="Type your phone number here" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
+            </div>
+         </div>
+
+      
+        
+    </body>
+</html>
